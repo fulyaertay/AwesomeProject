@@ -10,7 +10,7 @@ export default function App() {
   
     return (
       <View style={styles.container}>
-        <Text>You clicked {count} times</Text>
+        <Text style={styles.headText}>You clicked {count} times</Text>
         <Button
           onPress={() => setCount(count + 1)}
           title="Click me!"
@@ -25,5 +25,8 @@ export default function App() {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center'
+    },
+    headText:{
+      marginBottom:"10px"
     }
   });
