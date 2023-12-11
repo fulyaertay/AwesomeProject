@@ -24,7 +24,8 @@ export default function App() {
     container: {
       flex: 1,
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor:"#dfdf"
     },
     headText:{
       marginBottom:"10px"
