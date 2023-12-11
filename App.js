@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet} from 'react-native';
 
 export default function App() {
  
@@ -15,6 +15,7 @@ export default function App() {
           onPress={() => setCount(count + 1)}
           title="Click me!"
         />
+        <StatusBar></StatusBar>
       </View>
     );
   };
