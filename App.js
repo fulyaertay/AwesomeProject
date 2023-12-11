@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>My First App</Text>
+      <Text>Fulya Ertay</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -12,7 +13,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    margin:"auto",
+   flex:1,
     backgroundColor: '#fefe',
     alignItems: 'center',
     justifyContent: 'center',
