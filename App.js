@@ -5,9 +5,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>My First App</Text>
-      <Text>Fulya Ertay</Text>
+      <Text style={styles.headText}>Fulya Ertay</Text>
       <StatusBar style="auto" />
     </View>
+    
   );
 }
 
@@ -18,4 +19,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  headText:{
+    color:"#dfdfdf"
+  }
 });
