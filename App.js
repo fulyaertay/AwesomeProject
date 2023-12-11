@@ -15,7 +15,7 @@ export default function App() {
           onPress={() => setCount(count + 1)}
           title="Click me!"
         />
-        <StatusBar></StatusBar>
+        <StatusBar  style="auto" />
       </View>
     );
   };
