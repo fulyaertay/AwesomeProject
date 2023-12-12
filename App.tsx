@@ -44,23 +44,24 @@ const styles = StyleSheet.create({
 
   },
   headText: {
-    fontSize: "2rem",
+    fontSize: 40,
     marginBottom: 40,
   },
   infoText: {
-    marginBottom: "10px",
-    width: "80px",
-    height: "60px",
+  
+    width: 70,
+    height: 65,
     backgroundColor: "black",
     color: "white",
-    border: "1px solid gray",
+    borderWidth: 1,
+    borderColor:"gray",
     alignItems: "center",
     justifyContent: "center",
-    fontSize: "40px",
+    fontSize: 40,
     textAlign: "center",
   },
   buttonStyle: {
-    marginTop: "10px",
-    marginLeft: "10px",
+    marginTop: 10,
+    marginLeft: 10,
   },
 });
