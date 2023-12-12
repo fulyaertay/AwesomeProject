@@ -12,22 +12,23 @@ export default function App() {
       <View style={styles.container}>
       <Text style={styles.headText}>Counter</Text>
         <Text style={styles.infoText}>{count}</Text>
-        <View  style={{ flexDirection:"row",justifyContent:"between"}}>
+        <View  style={{ flexDirection:"row"}}>
         <Button
-          style={styles.buttonStyle}
+          style={{marginRight:10}}
           onPress={() => setCount(count + 1)}
           title="Increment"
         />
          <Button
-          style={styles.buttonStyle}
+           style={{paddingRight:10}}
           onPress={() => setCount(count>0 ? count - 1: 0)}
           title="Decrement"
           disabled={count==0 && true}
         />
          <Button
-          style={styles.buttonStyle}
+           style={{marginRight:10}}
           onPress={() => setCount(0)}
           title="Reset"
+          disabled={count==0 && true}
         />
         </View>
         
