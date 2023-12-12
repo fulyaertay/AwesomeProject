@@ -11,13 +11,14 @@ export default function App() {
       <Text style={styles.infoText}>{count}</Text>
       <View style={{ flexDirection: "row", margin: 10 }}>
         <View style={{ flexDirection: "row", margin: 10 }}>
-          <Button onPress={() => setCount(count + 1)} title="Increment" />
+          <Button onPress={() => setCount(count + 1)} title="Increment" color="green" />
         </View>
         <View style={{ flexDirection: "row", margin: 10 }}>
           <Button
             onPress={() => setCount(count > 0 ? count - 1 : 0)}
             title="Decrement"
             disabled={count == 0 && true}
+            color="#B6BC2D"
           />
         </View>
         <View style={{ flexDirection: "row", margin: 10 }}>
@@ -26,6 +27,7 @@ export default function App() {
             onPress={() => setCount(0)}
             title="Reset"
             disabled={count == 0 && true}
+            color="#B53B4F"
           />
         </View>
       </View>
