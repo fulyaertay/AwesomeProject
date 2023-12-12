@@ -12,21 +12,25 @@ export default function App() {
       <View style={styles.container}>
       <Text style={styles.headText}>Counter</Text>
         <Text style={styles.infoText}>{count}</Text>
+        <View  style={{ flexDirection:"row",justifyContent:"between"}}>
         <Button
-          style={{backgroundColor:"green"}}
+          style={styles.buttonStyle}
           onPress={() => setCount(count + 1)}
           title="Increment"
         />
          <Button
-          style={{backgroundColor:"green"}}
+          style={styles.buttonStyle}
           onPress={() => setCount(count>0 ? count - 1: 0)}
           title="Decrement"
+          disabled={count==0 && true}
         />
          <Button
-          style={{backgroundColor:"green"}}
+          style={styles.buttonStyle}
           onPress={() => setCount(0)}
           title="Reset"
         />
+        </View>
+        
         <StatusBar  style="auto" />
       </View>
     );
@@ -41,7 +45,8 @@ export default function App() {
       backgroundColor:"#dfdf"
     },
     headText:{
-    fontSize:"2rem"
+    fontSize:"2rem",
+    marginBottom:40
     },
     infoText:{
       marginBottom:"10px",
@@ -54,5 +59,11 @@ export default function App() {
       justifyContent:"center",
       fontSize:"40px",
       textAlign:"center"
+    },
+    buttonStyle:{
+    
+      marginTop: "10px",
+      marginLeft: "10px"
+    
     }
   });
