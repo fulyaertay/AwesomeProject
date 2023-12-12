@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#dfdf",
+    backgroundColor:"#6dd5ed"
+
   },
   headText: {
     fontSize: "2rem",
