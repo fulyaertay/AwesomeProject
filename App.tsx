@@ -22,7 +22,7 @@ export default function App() {
           />
         </View>
         <View style={{ flexDirection: "row", margin: 10 }}>
-          {" "}
+       
           <Button
             onPress={() => setCount(0)}
             title="Reset"
