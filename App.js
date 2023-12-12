@@ -10,10 +10,22 @@ export default function App() {
   
     return (
       <View style={styles.container}>
-        <Text style={styles.headText}>You clicked {count} times</Text>
+      <Text style={styles.headText}>Counter</Text>
+        <Text style={styles.infoText}>{count}</Text>
         <Button
+          style={{backgroundColor:"green"}}
           onPress={() => setCount(count + 1)}
-          title="Click me!"
+          title="Increment"
+        />
+         <Button
+          style={{backgroundColor:"green"}}
+          onPress={() => setCount(count>0 ? count - 1: 0)}
+          title="Decrement"
+        />
+         <Button
+          style={{backgroundColor:"green"}}
+          onPress={() => setCount(0)}
+          title="Reset"
         />
         <StatusBar  style="auto" />
       </View>
@@ -29,6 +41,18 @@ export default function App() {
       backgroundColor:"#dfdf"
     },
     headText:{
-      marginBottom:"10px"
+    fontSize:"2rem"
+    },
+    infoText:{
+      marginBottom:"10px",
+      width:"80px",
+      height:"60px",
+      backgroundColor:"black",
+      color:"white",
+     border:"1px solid gray",
+      alignItems:"center",
+      justifyContent:"center",
+      fontSize:"40px",
+      textAlign:"center"
     }
   });
