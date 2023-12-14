@@ -6,12 +6,12 @@ export default function App() {
   const [count, setCount] = useState(0);
 
   return (
-   
-   
-      <ImageBackground
-        source={require("./assets/bgImage.jpg")}
-        style={{ flex: 1, width: null, height: null }}
-      > <View style={styles.container}>
+    <ImageBackground
+      source={require("./assets/bgImage.jpg")}
+      style={{ flex: 1, width: null, height: null }}
+    >
+      {" "}
+      <View style={styles.container}>
         <Text style={[styles.headText]}>Counter</Text>
         <Text style={styles.infoText}>{count}</Text>
         <View style={{ flexDirection: "row", margin: 10 }}>
@@ -40,8 +40,8 @@ export default function App() {
           </View>
         </View>
         <StatusBar style="auto" />
-    
-    </View>  </ImageBackground>
+      </View>{" "}
+    </ImageBackground>
   );
 }
 
@@ -51,17 +51,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    width:"100%"
+    width: "100%",
   },
   headText: {
     fontSize: 40,
     marginBottom: 40,
     textAlign: "center",
-   
   },
   infoText: {
     height: 65,
-    width:300,
+    width: 300,
     backgroundColor: "black",
     color: "white",
     borderWidth: 4,
