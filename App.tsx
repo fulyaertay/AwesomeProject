@@ -25,7 +25,7 @@ export default function App() {
           <View style={{ flexDirection: "row", margin: 10 }}>
             <TouchableOpacity onPress={() => setCount(count + 1)}>
               <View style={styles.button}>
-                <Text style={styles.buttonText}>Increment</Text>
+                <Text style={styles.buttonText}>INCREMENT</Text>
               </View>
             </TouchableOpacity>
           </View>
@@ -35,7 +35,7 @@ export default function App() {
               disabled={count == 0 && true}
             >
               <View style={styles.button2}>
-                <Text style={styles.buttonText}>Decrement</Text>
+                <Text style={styles.buttonText}>DECREMENT</Text>
               </View>
             </TouchableOpacity>
           </View>
@@ -45,7 +45,7 @@ export default function App() {
               disabled={count == 0 && true}
             >
               <View style={styles.button3}>
-                <Text style={styles.buttonText}>Reset</Text>
+                <Text style={styles.buttonText}>RESET</Text>
               </View>
             </TouchableOpacity>
           </View>
