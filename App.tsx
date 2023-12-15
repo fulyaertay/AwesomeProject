@@ -23,29 +23,31 @@ export default function App() {
         <Text style={styles.infoText}>{count}</Text>
         <View style={{ flexDirection: "row", margin: 10 }}>
           <View style={{ flexDirection: "row", margin: 10 }}>
-          <TouchableOpacity onPress={() => setCount(count + 1)}>
-          <View style={styles.button}>
-            <Text style={styles.buttonText}>Increment</Text>
-          </View>
-        </TouchableOpacity>
-             
-          
+            <TouchableOpacity onPress={() => setCount(count + 1)}>
+              <View style={styles.button}>
+                <Text style={styles.buttonText}>Increment</Text>
+              </View>
+            </TouchableOpacity>
           </View>
           <View style={{ flexDirection: "row", margin: 10 }}>
-          <TouchableOpacity onPress={() => setCount(count > 0 ? count - 1 : 0)} disabled={count == 0 && true}>
-          <View style={styles.button2}>
-            <Text style={styles.buttonText}>Decrement</Text>
-          </View>
-        </TouchableOpacity>
-           
+            <TouchableOpacity
+              onPress={() => setCount(count > 0 ? count - 1 : 0)}
+              disabled={count == 0 && true}
+            >
+              <View style={styles.button2}>
+                <Text style={styles.buttonText}>Decrement</Text>
+              </View>
+            </TouchableOpacity>
           </View>
           <View style={{ flexDirection: "row", margin: 10 }}>
-          <TouchableOpacity onPress={() => setCount(0)} disabled={count == 0 && true}>
-          <View style={styles.button3}>
-            <Text style={styles.buttonText}>Reset</Text>
-          </View>
-        </TouchableOpacity >
-          
+            <TouchableOpacity
+              onPress={() => setCount(0)}
+              disabled={count == 0 && true}
+            >
+              <View style={styles.button3}>
+                <Text style={styles.buttonText}>Reset</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
         <StatusBar style="auto" />
@@ -84,24 +86,21 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   button: {
-
-    alignItems: 'center',
-    backgroundColor: 'green',
+    alignItems: "center",
+    backgroundColor: "green",
   },
   button2: {
-
-    alignItems: 'center',
-    backgroundColor: '#9faf33',
+    alignItems: "center",
+    backgroundColor: "#9faf33",
   },
   button3: {
-
-    alignItems: 'center',
-    backgroundColor: '#B53B4F',
+    alignItems: "center",
+    backgroundColor: "#B53B4F",
   },
-  
+
   buttonText: {
-    textAlign: 'center',
+    textAlign: "center",
     padding: 20,
-    color: 'white',
+    color: "white",
   },
 });
