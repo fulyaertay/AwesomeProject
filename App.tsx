@@ -102,5 +102,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     padding: 20,
     color: "white",
+    
   },
 });
