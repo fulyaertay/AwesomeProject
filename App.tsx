@@ -1,6 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { View, Text, Button, StyleSheet, ImageBackground,    TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  Button,
+  StyleSheet,
+  ImageBackground,
+  TouchableOpacity,
+} from "react-native";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -16,16 +23,13 @@ export default function App() {
         <Text style={styles.infoText}>{count}</Text>
         <View style={{ flexDirection: "row", margin: 10 }}>
           <View style={{ flexDirection: "row", margin: 10 }}>
-          <TouchableOpacity>
-        
-          <Button
-              onPress={() => setCount(count + 1)}
-              title="Increment"
-              color="green"
-            />
-         
-        </TouchableOpacity>
-           
+            <>
+              <Button
+                onPress={() => setCount(count + 1)}
+                title="Increment"
+                color="green"
+              />
+            </>
           </View>
           <View style={{ flexDirection: "row", margin: 10 }}>
             <Button
