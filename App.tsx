@@ -23,29 +23,29 @@ export default function App() {
         <Text style={styles.infoText}>{count}</Text>
         <View style={{ flexDirection: "row", margin: 10 }}>
           <View style={{ flexDirection: "row", margin: 10 }}>
-            <>
-              <Button
-                onPress={() => setCount(count + 1)}
-                title="Increment"
-                color="green"
-              />
-            </>
+          <TouchableOpacity onPress={() => setCount(count + 1)}>
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>Increment</Text>
+          </View>
+        </TouchableOpacity>
+             
+          
           </View>
           <View style={{ flexDirection: "row", margin: 10 }}>
-            <Button
-              onPress={() => setCount(count > 0 ? count - 1 : 0)}
-              title="Decrement"
-              disabled={count == 0 && true}
-              color="#B6BC2D"
-            />
+          <TouchableOpacity onPress={() => setCount(count > 0 ? count - 1 : 0)} disabled={count == 0 && true}>
+          <View style={styles.button2}>
+            <Text style={styles.buttonText}>Decrement</Text>
+          </View>
+        </TouchableOpacity>
+           
           </View>
           <View style={{ flexDirection: "row", margin: 10 }}>
-            <Button
-              onPress={() => setCount(0)}
-              title="Reset"
-              disabled={count == 0 && true}
-              color="#B53B4F"
-            />
+          <TouchableOpacity onPress={() => setCount(0)} disabled={count == 0 && true}>
+          <View style={styles.button3}>
+            <Text style={styles.buttonText}>Reset</Text>
+          </View>
+        </TouchableOpacity >
+          
           </View>
         </View>
         <StatusBar style="auto" />
@@ -82,5 +82,26 @@ const styles = StyleSheet.create({
   buttonStyle: {
     marginTop: 10,
     marginLeft: 10,
+  },
+  button: {
+
+    alignItems: 'center',
+    backgroundColor: 'green',
+  },
+  button2: {
+
+    alignItems: 'center',
+    backgroundColor: '#9faf33',
+  },
+  button3: {
+
+    alignItems: 'center',
+    backgroundColor: '#B53B4F',
+  },
+  
+  buttonText: {
+    textAlign: 'center',
+    padding: 20,
+    color: 'white',
   },
 });
